@@ -8,9 +8,7 @@ services:
       dockerfile: Dockerfile
     volumes:
        - ./:/home/jovyan/
-       - /etc/group:/etc/group:ro
-       - /etc/passwd:/etc/passwd:ro
-       - /etc/shadow:/etc/shadow:ro
-    ports:
-      - "8888:8888"
+    # need for jupyter for example
+    # ports:
+    #   - "8888:8888"   
 
