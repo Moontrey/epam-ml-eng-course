@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  starspace:
+    image: starspace
+    user: 1000:1000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+       - ./:/home/jovyan/
+       - /etc/group:/etc/group:ro
+       - /etc/passwd:/etc/passwd:ro
+       - /etc/shadow:/etc/shadow:ro
+    ports:
+      - "8888:8888"
+
