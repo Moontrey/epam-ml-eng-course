@@ -7,8 +7,10 @@ docker run -v /home/moontrey/Documents/docker:/home/jovyan/ -p 8888:8888 jupyter
 docker build -t test_docker .
 docker run -v /home/moontrey/Documents/docker:/home/jovyan/ -p 8888:8888 test_docker
 
+building with arguments
+docker-compose build --build-arg GROUP_ID="23423432423"
+and after
 docker-compose up
-
 for starspace
 sudo apt-get install build-essential g++
 
